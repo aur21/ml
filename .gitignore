@@ -1,1 +1,11 @@
 COSC/Lab1/cta-ridership.csv
+COSC/Lab13/RobotSimulation/.DS_Store
+COSC/Lab13/RobotSimulation/__pycache__/__init__.cpython-310.pyc
+COSC/Lab13/RobotSimulation/__pycache__/App.cpython-310.pyc
+COSC/Lab13/RobotSimulation/__pycache__/Composite.cpython-310.pyc
+COSC/Lab13/RobotSimulation/__pycache__/Constraint.cpython-310.pyc
+COSC/Lab13/RobotSimulation/__pycache__/Material.cpython-310.pyc
+COSC/Lab13/RobotSimulation/__pycache__/Particle.cpython-310.pyc
+COSC/Lab13/RobotSimulation/__pycache__/Vector.cpython-310.pyc
+COSC/Lab13/RobotSimulation/__pycache__/VerletPhysics.cpython-310.pyc
+COSC/Lab13/RobotSimulation/__pycache__/World.cpython-310.pyc
