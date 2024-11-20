@@ -1,0 +1,33 @@
+###########################################
+#
+# Name: 
+#
+# Partner (if applicable):
+#
+###########################################
+
+1) Describe the deep learning model(s) used by your agent.
+
+# YOUR ANSWER HERE
+
+
+2) Describe your agent's exploration policy.
+
+# YOUR ANSWER HERE
+
+
+3) Describe how your agent converts observations, rewards, and 
+   actions into training data and labels for the model(s).
+
+# YOUR ANSWER HERE
+
+
+4) What was the (approximate) best reward achieved by your agent during your tests
+
+# YOUR ANSWER HERE
+
+
+5) How did you attempt to improve/optimize your agent after your initial implementation?
+
+# YOUR ANSWER HERE
+
