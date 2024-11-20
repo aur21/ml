@@ -1,0 +1,47 @@
+###########################################
+#
+# Name: 
+#
+# Partner (if applicable):
+#
+###########################################
+
+1.1) Mean absolute error from leaderboard for baseline LinearRegression model:
+
+# YOUR ANSWER HERE
+
+
+2.1) Optimal hyperparameters from Part 2 grid search:
+
+# YOUR ANSWER HERE
+
+
+2.2) Mean absolute error from leaderboard for optimized Part 2 model:
+
+# YOUR ANSWER HERE
+
+
+3.1) Optimal hyperparameters from Part 3 (random forest) grid search:
+
+# YOUR ANSWER HERE
+
+
+3.2) Mean absolute error from leaderboard for optimized random forest:
+
+# YOUR ANSWER HERE
+
+
+4.1) Top 5 features ranked by importance:
+
+# YOUR ANSWER HERE
+
+
+4.2) What do these features tell you about the movie rating prediction task? Are you surprised by the ranking of these features? If so, why? If not, why not?
+
+# YOUR ANSWER HERE
+
+
+(Optional) 5.1) Briefly list any further optimizations you performed to improve your performance on the leaderboard.
+
+# YOUR ANSWER HERE
+

@@ -1,0 +1,34 @@
+###########################################
+#
+# Name: Minh Tao
+#
+# Partner (if applicable): Max Spieler, Andrew Agriantonis
+#
+###########################################
+
+1) What features are most important for this predictive task? How did you determine this? What does this tell you about the underlying phenomenon?
+
+We created a kde pairplot on a modified version of the original dataset that dropped all non-numeric features and only took into account a random sample of 1000 examples in the dataset.
+From the pairplot, we observed the relationship between the features.
+We observed that air humidity at 3pm the day before was positively correlated with whether it rained the next day, which exhibited the strongest seperation patterns; whether it was cloudy
+at 3pm and 9pm the day before was the next strongest correlation. Sunshine was negatively correlated with whether it rained the next day, and its histogram was the most clearly separated out of other histograms for other negatively related features. 
+
+2) Describe the data preprocessing steps your pipeline performs.
+
+The pipeline first one-hot encodes all non-numeric features in the dataset using pd.get_dummies to ensure the model can work with them.
+Then, the program imputes any missing values in the data using an iterative imputer, which tries to predict and fill in missing data in the dataset using machine learning, giving the highest chance of the imputation not skewing the predictions.
+Finally, the data in the data set is scaled to between 0 and 1 using a StandardScaler.
+
+3) What different models did you try to improve your performance? How did they perform relative to each other?
+
+We tried a 5-nearest neighbors model, which performs the worst out of all the models we tested.
+We also tried a Support Vector Classifier, but we decided the time for the program to run was too lengthy (as it caused Gradescope to time out).
+The last model we tried was a logistic regression model, which performed the best out of the models we tested in terms of runtime and precision.
+
+4) What different hyperparameters did you attempt to optimize for the model you submitted? What values did you choose in the end?
+
+We tried to optimize the following hyperparameters: C, solver, maxIter, and penalty. In the end, we chose a model with default hyperparameters.
+
+5) Did model selection or hyperparameter optimization make the most difference for improving model performance?
+
+Model selection made the most difference for improving model performance for our program.

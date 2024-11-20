@@ -1,0 +1,56 @@
+######################################
+Lab 2 Open-ended Questions
+
+NAME:
+
+#######################################
+
+1.1) From the scatterplot, how can we tell that the combination of `PetalLengthCm` and `SepalLengthCm` has more predictive power than either feature individually? 
+
+From the scatterplot, we can tell that PetalLengthCm and SepalLengthCm are strongly positively correlated, and that each species' petal and sepal length range are separate, with setosa having the lowest and and virginica having the highest.
+
+
+1.2) From the pair plot, which Iris feature do you think is most useful for the species prediction task? Which feature do you think is least useful? Why?
+
+From the pair plot, we can conclude that petal width is the most useful for the species prediction task; every plot that uses petal width has the fewest overlapping points between the three species, thus indicating that each species has a distinct range of petal width that has minimal overlap, making it easier for the program to distinguish the three species using petal width. 
+Conversely, sepal width is the least useful; plots that use sepal width has the most overlap compared to other plots, meaning that all three species' sepal width ranges overlap greatly, making it difficult for the program to distinguish species using sepal width.
+
+
+1.3) With no additional knowledge about the FMRI data, do you expect that a shallow ML algorithm could be trained to predict whether someone is receiving this stimulus versus a control from FMRI scans with high accuracy? Why?
+
+Yes, because from the line plot, we can discern a pattern in the data; the signals for parietal and frontal brain lobes are increased much more when the subject is presented with a stimulus versus a control cue. A ML algorithm would likely also notice this trend in the dataset. There are also few features in the dataset, meaning that the ML algorithm requries minimal manual feature selection.
+
+
+1.4) The Seaborn gallery has several examples of plots made using the library. Choose two plots from this gallery other than the FMRI plot and explain why you think they were a good (or bad!) choice of visualization for the underlying data. 
+
+- The annotated heatmap is a good choice for the data being presented (number of flight passengers for every month from 1949 to 1960) allows us to easily discern trends in the number of passengers as time goes on; years being represented as columns also help us separate observations for each year.
+
+- The horizontal bar plot is a good choice for the data being presented (percent of car crashes involving alcohol by state); each row is clearly separated to denote different states, and the percent of alcohol related crashes is easily discerned by looking at the ratio between the length of the dark columns and the light columns.
+
+
+2.1) What does the confusion matrix tell us about the SVC classifier we have trained on the heart failure dataset?
+
+The confusion matrix tells us that the SVC classifier has roughly equal precision and recall, with slightly higher recall.
+
+
+3.1) What features do you expect to be MOST predictive of death in the heart failure dataset? Why?
+
+We can expect ejection fraction to be the most predictive of death in the heart failure test; every plot that uses creatinine phosphokinase in the pair plot have minimal overlap between the clustering of death and non-death data points, thus allowing us to more easily observe a pattern in which data ranges are predictive of either death or non-death.
+
+
+3.2) What features do you expect to be LEAST predictive of death in the heart failure dataset? Why?
+
+We can expect creatinine phosphokinase to be the least predictive of death in the heart failure test; every plot that uses creatinine phosphokinase in the pair plot have the most overlap between the clustering of death and non-death data points.
+
+
+3.3) What do you think is most surprising about the relationship between features in the heart failure dataset and their relationship to patient death outcomes?
+
+I found the relationship between ejection fraction and age to be the most surprising; many death cases have low ejection fraction regardless of the age of the patient.
+
+
+3.4) What does the confusion matrix tell you about the challenges of identifying Iris species? How does the information presented in the confusion matrix relate to the data visualizations from Part 1 of the lab? 
+
+The confusion matrix tells us that the challenges of identifying Iris species does not lie with the classifier being used, but with the data being used; in this case, the challenge lies with the sample size of the data. While the results of the confusion matrix indicate that the classifier can predict well, the sample size is too small for this observation to be conclusive.
+
+The data visualizations from part 1 indicate that setosa would be the easiest species to predict, since its features are distinct from the other two species; this is also reflected in the confusion matrix, since the classifier had no errors when doing any predictions related to setosa.
+
